@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet">
+  <style>
+    .background { fill: #f4f7f6; }
+    .primary-color { fill: #2ecc71; } /* A fresh green */
+    .secondary-color { fill: #1abc9c; } /* A complementary teal */
+    .accent-color { fill: #f39c12; } /* A warm accent */
+    .text-color { fill: #34495e; } /* Dark charcoal */
+    .icon-fill { fill: #ffffff; }
+    .line-color { stroke: #34495e; stroke-width: 2; fill: none; }
+    .highlight { fill: rgba(26, 188, 156, 0.3); } /* Translucent teal */
+  </style>
+
+  <!-- Background -->
+  <rect class="background" width="100%" height="100%"/>
+
+  <!-- Main Composition: AI Brain + Botanical Element -->
+
+  <!-- Stylized AI Brain/Chip -->
+  <g transform="translate(150, 250)">
+    <path class="primary-color" d="M60 0C26.86 0 0 26.86 0 60s26.86 60 60 60 60-26.86 60-60S93.14 0 60 0zm0 100C33.49 100 10 76.51 10 50S33.49 0 60 0s50 33.49 50 50-33.49 50-50 50z"/>
+    <circle class="secondary-color" cx="30" cy="30" r="10"/>
+    <rect class="secondary-color" x="70" y="30" width="20" height="20" rx="5"/>
+    <path class="secondary-color" d="M40 70l20 20-20 20M60 70l-20 20 20 20" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle class="accent-color" cx="60" cy="50" r="5"/>
+  </g>
+
+  <!-- Abstract Botanical Element (Leaf/Flower) -->
+  <g transform="translate(400, 200)">
+    <path class="secondary-color" d="M0 50C0 22.39 22.39 0 50 0s50 22.39 50 50-22.39 50-50 50-50-22.39-50-50z" fill-opacity="0.7"/>
+    <path class="primary-color" d="M50 0C35.73 0 24.11 11.62 24.11 26.89s11.62 26.89 26.89 26.89 26.89-11.62 26.89-26.89S64.27 0 50 0z" transform="translate(0, 25)"/>
+    <path class="primary-color" d="M50 0C35.73 0 24.11 11.62 24.11 26.89s11.62 26.89 26.89 26.89 26.89-11.62 26.89-26.89S64.27 0 50 0z" transform="translate(25, 0) rotate(60 50 50)"/>
+    <path class="primary-color" d="M50 0C35.73 0 24.11 11.62 24.11 26.89s11.62 26.89 26.89 26.89 26.89-11.62 26.89-26.89S64.27 0 50 0z" transform="translate(-25, 0) rotate(-60 50 50)"/>
+  </g>
+
+  <!-- Connecting Lines (Representing Style Transfer) -->
+  <path class="line-color accent-color" d="M250 300 Q 325 200 400 300 Q 325 400 250 300 Z" fill="none" stroke-dasharray="10,5" stroke-width="3"/>
+  <path class="line-color accent-color" d="M250 300 L 400 300" stroke-width="2" stroke-dasharray="5,5"/>
+  <path class="line-color accent-color" d="M325 200 L 325 400" stroke-width="2" stroke-dasharray="5,5"/>
+
+
+  <!-- Overlay Shapes for Visual Interest (Highlighting the blend) -->
+  <circle class="highlight" cx="325" cy="300" r="70"/>
+  <rect x="100" y="450" width="150" height="100" rx="20" ry="20" class="highlight" opacity="0.5"/>
+  <polygon points="600,400 650,450 550,450" class="highlight" opacity="0.5"/>
+
+
+  <!-- Text -->
+  <text x="450" y="280" class="text-color" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold">AI-Driven</text>
+  <text x="450" y="330" class="text-color" font-family="Arial, Helvetica, sans-serif" font-size="28">Niche Botanical</text>
+  <text x="450" y="370" class="primary-color" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold">Style Transfer</text>
+
+  <!-- Small Icons / Abstract Elements -->
+  <g transform="translate(700, 500)">
+    <circle cx="20" cy="20" r="15" class="accent-color"/>
+    <circle cx="50" cy="20" r="10" class="secondary-color"/>
+    <rect x="70" y="5" width="30" height="30" rx="5" class="primary-color"/>
+  </g>
+
+</svg>
